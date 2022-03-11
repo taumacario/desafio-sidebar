@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.dashboard {
+    display: flex;
+    height: 100%;
+}
+
+.main {
+    padding: 18px;
+    flex: 1;
+    background-color: #DCE4E3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.menu {
+    width: 78px;
+    height: 100%;
+    background-color: #18C29C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.menu.open {
+    width: 250px;
+}
+
+.box {
+    padding-top: 26px ;
+    padding-left: 17px;
+    padding-right: 14px;
+}
+
+.list-menu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: none;
+}
+
+.item-menu {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px 10px 5px;
+    border-radius: 10px
+}
+
+.item-menu:hover {
+    background-color: #8ed7c0;
+}
+
+.icon-menu {
+    padding-right: 13px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.menu.open .header {
+    justify-content: space-between;
+}
+
+.logo {
+    display: none;
+}
+
+.menu.open .logo {
+    display: block;
+}
+
+.text-menu {
+    display: none;
+}
+
+.menu.open .text-menu {
+    display: flex;
+}
+
+.footer {
+    background-color: #8ED7C6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    padding-right: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 60px;
+    margin-top: auto;
+}
+
+.menu.open .footer {
+    justify-content: space-between;
+}
+
+.login {
+    display: none;
+}
+
+.menu.open .login {
+    display: flex;
+}
+
+.foto {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 9px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    font-size:  15px;
+}
+
+.subtext {
+    font-size:12px;
+}
+
+.icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
